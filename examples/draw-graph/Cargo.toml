@@ -1,0 +1,17 @@
+[package]
+name = "draw-graph"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chartrs = { path = "../../../chartrs/chartrs", features = [
+    "line_series",
+    "bitmap_backend",
+], default-features = false }
+
+chartrs-backend = { path = "../../../chartrs/chartrs-backend", features = [
+    "ttf",
+] }
+chartrs-bitmap = { path = "../../../chartrs/chartrs-bitmap" }
+chartrs-bk = { path = "../../../chartrs/chartrs-bk" }
+chartrs-log-plot = { path = "../../../chartrs-log-plot" }
